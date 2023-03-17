@@ -3,9 +3,7 @@
 My task is to take the given starter code and convert it into a working Node.js command-line application. This application will take in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person and the code passes each provided test.
 
 ## Instructions
-
 The application has a number of features which include:
-
 Accepting user inputs
 When all the user inputs have been accepted then a completed team-page is rendered in the dist/ directory
 When the GitHub username is clicked, their profile is opened up in a new tab
@@ -17,8 +15,7 @@ email address
 path to stored img of employee
 Managers can have their office number input and rendered
 Engineers can have their github username input and rendered
-Interns can have their school input and rendered
----
+
 
 ## Mock-Up
 
