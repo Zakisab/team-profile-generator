@@ -56,5 +56,6 @@ npm run start
 
 ## Review
 https://github.com/Zakisab/team-profile-generator
+     AND
 https://zakisab.github.io/team-profile-generator/
 
