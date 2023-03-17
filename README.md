@@ -39,15 +39,13 @@ Ensure that you have node and npm installed
 
 Download Node
 
-For detailed instructions on installing node please follow this link for instructions
-
+For detailed instructions on installing node 
 Clone this repository into your local repository.
 
-git clone git@github.com:TheInfamousGrim/team-profile-generator.git.
 Install the dependencies
 
 npm install
-If you've followed these steps correctly then the application should be good to go and can be tested using software like Insomnia Core 😁
+If you've followed these steps correctly then the application should be good to go and can be tested using software like Insomnia Core.
 
 Usage
 Please follow these steps to use the application
