@@ -78,4 +78,5 @@ In addition to `Employee`'s properties and methods, `Intern` will also have the 
 ![object-oriented-programming-challenge-demo](https://user-images.githubusercontent.com/118730175/227416481-a6b1906d-c5fe-4ae1-a5b5-90478678eeda.jpg)
 
 http://localhost:3000/Zakisab-portfolio-react
+https://github.com/Zakisab/team-profile-generator
 
