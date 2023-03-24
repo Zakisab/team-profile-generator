@@ -1,61 +1,75 @@
-#  Team Profile Generator
 
-My task is to take the given starter code and convert it into a working Node.js command-line application. This application will take in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person and the code passes each provided test.
+# Team-Profile-Generator
+## Your Task
+The task is to create a Node.js command-line application that collects information about software engineering team members and then generates an HTML webpage with summaries for each person.
 
-## Instructions
-The application has a number of features which include:
-Accepting user inputs
-When all the user inputs have been accepted then a completed team-page is rendered in the dist/ directory
-When the GitHub username is clicked, their profile is opened up in a new tab
-The default email program is opened when the email address of the employee is selected
-All employees can have the following data input and rendered:
-name
-employee ID
-email address
-path to stored img of employee
-Managers can have their office number input and rendered
-Engineers can have their github username input and rendered
+## User Story
 
+```md
+AS A manager
+I WANT to generate a webpage that displays my team's basic info
+SO THAT I have quick access to their emails and GitHub profiles
+```
+## Screenshot
 
-## Mock-Up
-
-The following image shows a mock-up of the generated HTML’s appearance and functionality:
-
-![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.]
-
-![Screenshot 2023-03-17 172348](https://user-images.githubusercontent.com/118730175/225976880-bcfba440-30cd-44da-bc42-3594eb16792d.png)
-![Screenshot 2023-03-17 172413](https://user-images.githubusercontent.com/118730175/225976989-e15cf181-e0ef-4534-b12f-c1cd3e6a5ae2.png)
-![Screenshot 2023-03-17 172439](https://user-images.githubusercontent.com/118730175/225977069-35b5ca7d-e85b-4294-9a80-53ad3eacf331.png)
+The following image shows screenshot of the generated HTML’s appearance and functionality:
 
 
 
+I started with a directory structure that looks like the following example:
 
-# Getting Started
 
-## Installation
-In order to install this note taker app and test it you need to follow these steps.
+```md
+__tests__/			// jest tests
+  Employee.test.js
+  Engineer.test.js
+  Intern.test.js
+  Manager.test.js
+dist/               // rendered output (HTML) and CSS style sheet
+lib/				// classes
+src/				// template code for  html
+index.js			// runs the application
+```
 
-Ensure that you have node and npm installed
+This application includes `Employee`, `Manager`, `Engineer`, and `Intern` classes. The tests for these classes (in the `_tests_` directory) ALL pass.
 
-Download Node
+The first class is an `Employee` parent class with the following properties and methods:
 
-For detailed instructions on installing node 
-Clone this repository into your local repository.
 
-Install the dependencies
+* `name`
 
-npm install
-If you've followed these steps correctly then the application should be good to go and can be tested using software like Insomnia Core.
+* `id`
 
-Usage
-Please follow these steps to use the application
+* `email`
 
-Run the following script from your terminal
+* `getName()`
 
-npm run start
+* `getId()`
 
-## Review
-https://github.com/Zakisab/team-profile-generator
-     AND
-https://zakisab.github.io/team-profile-generator/
+* `getEmail()`
 
+* `getRole()`&mdash;returns `'Employee'`
+
+The other three classes will extend `Employee`.
+
+In addition to `Employee`'s properties and methods, `Manager` will also have the following:
+
+* `officeNumber`
+
+* `getRole()`&mdash;overridden to return `'Manager'`
+
+In addition to `Employee`'s properties and methods, `Engineer` will also have the following:
+
+* `github`&mdash;GitHub username
+
+* `getGithub()`
+
+* `getRole()`&mdash;overridden to return `'Engineer'`
+
+In addition to `Employee`'s properties and methods, `Intern` will also have the following:
+
+* `school`
+
+* `getSchool()`
+
+* `getRole()`&mdash;overridden to return `'Intern'`
