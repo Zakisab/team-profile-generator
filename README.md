@@ -73,3 +73,9 @@ In addition to `Employee`'s properties and methods, `Intern` will also have the 
 * `getSchool()`
 
 * `getRole()`&mdash;overridden to return `'Intern'`
+
+#Review
+![object-oriented-programming-challenge-demo](https://user-images.githubusercontent.com/118730175/227416481-a6b1906d-c5fe-4ae1-a5b5-90478678eeda.jpg)
+
+http://localhost:3000/Zakisab-portfolio-react
+
